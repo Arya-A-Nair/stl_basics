@@ -4,14 +4,17 @@
 using namespace std;
 
 int main(){
-    queue<string> q;
+    queue<int> q;
 
-    q.push("devansh");
-    q.push("neelansh");
-    q.push("hussain");
+    q.push(10);
+    q.push(20);
+    q.push(30);
+    q.push(40);
+    q.push(50);
+    
     q.pop();
     q.empty();
     q.size();
     q.front();
-    
+    q.back();
 }
