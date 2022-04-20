@@ -4,7 +4,9 @@
 using namespace std;
 
 int main(){
+    
     list<int> l(5,1);
+
     //copy list
     list<int> n(l);
 
@@ -14,8 +16,6 @@ int main(){
     l.end();
     l.erase(l.begin());
     l.size();
-    l.max_size(); 
-
-
+    l.max_size();
 
 }
