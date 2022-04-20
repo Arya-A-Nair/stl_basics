@@ -34,7 +34,4 @@ int main(){
     cout << s.empty();
     
     
-    
-    
-    
 }
