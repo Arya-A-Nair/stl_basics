@@ -7,8 +7,15 @@ int main() {
 
 deque <int> d;
 
-d.push_back(1);
-d.push_front(2);
+d.push_back(20);
+d.push_back(30);
+d.push_back(40);
+d.push_back(50);
+d.push_front(10);
+
+d.front();
+d.end();
+
 d.pop_front();
 d.pop_back();
 d.begin();
@@ -20,6 +27,5 @@ d.front();
 d.back();
 d.empty();
 d.size();
-d.max_size();
 
 }

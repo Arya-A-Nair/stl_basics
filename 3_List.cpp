@@ -3,8 +3,12 @@
 
 using namespace std;
 
+//print function
 void print(list<int> l){
-    
+    for(auto i=l.begin();i!=l.end();i++){
+        cout << *i << " ";
+    }
+    cout << endl;
 }
 
 int main(){
@@ -15,22 +19,24 @@ int main(){
     list<int> l3(5,1);
     
     //copy list
-    list<int> n(l3);
+    list<int> l4(l3);
 
     //push
     l1.push_back(20);
     l1.push_back(30);
     l1.push_back(40);
     l1.push_back(50);
+
+    //print
+    print(l1);
+
     l1.push_front(10);
 
+    print(l1);
 
     //pop
     l1.pop_back();
     l1.pop_front();
-
-    //maxsize
-    cout << l1.max_size()<<endl;
 
     //remove
     l1.remove(30);
@@ -39,14 +45,24 @@ int main(){
     l1.erase(l1.begin(),l1.end());
 
     //empty
-    cout << l1.empty();
+    cout << l1.empty() << endl;
 
     //size
-    l1.size();
+    cout << l1.size() << endl;
 
-    l1.clear();
+    //insert
+    int arr[] = {1,2,3,4,5};    
+    l1.insert(l1.end(),arr,arr+5);    
+    print(l1);
 
+    //resize
+    l1.resize(20,5);    
+    print(l1);   
+
+    //sort
     l1.sort();
+    print(l1);
 
-    l1.get_allocator();
 }
+
+
