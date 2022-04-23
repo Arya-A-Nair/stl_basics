@@ -3,6 +3,14 @@
 
 using namespace std;
 
+void print(stack<int> s){
+   while(s.empty()==false){
+       cout << s.top() << " ";
+       s.pop();
+   }
+   cout << endl;
+}
+
 int main(){
     //declaration
     stack<int> s;
@@ -21,6 +29,9 @@ int main(){
     //accessing topmost element
     cout << s.top() << '\n';
 
+    //print
+    print(s);
+
     //popping out elements
     s.pop();
     s.pop();
@@ -29,9 +40,7 @@ int main(){
     s.pop();
 
     //empty
-    cout << s.top();
-
-    cout << s.empty();
+    cout << s.empty() << endl;
     
     
 }
