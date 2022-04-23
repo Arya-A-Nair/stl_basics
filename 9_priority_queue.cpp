@@ -11,6 +11,7 @@ int main(){
     //min heap
     priority_queue<int,vector<int>,greater<int> > p2;
 
+    //push
     p.push(2);
     p.push(3);
     p.push(5);
@@ -30,7 +31,7 @@ int main(){
     }
 
 
-    p.empty();
+    cout << p.empty();
 
 
 

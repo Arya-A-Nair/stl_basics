@@ -1,12 +1,26 @@
 #include <iostream>
 #include <set>
+#include <algorithm>
 
 using namespace std;
 
-int main(){
+void print(set<int> s)
+{
+    for (auto i : s)
+    {
+        cout << i << " ";
+    }
+    cout << endl;
+}
 
-    //no duplicates, no modification
+int main()
+{
+
+    // no duplicates, no modification
+    // declaration
     set<int> s;
+
+    // insertion
     s.insert(5);
     s.insert(6);
     s.insert(2);
@@ -14,24 +28,16 @@ int main(){
     s.insert(1);
     s.count(5);
 
-    //returns address
-    cout << *s.find(5);
+    //print
+    print(s);
 
-    //print 
-    for(int i: s){
-        cout << i;
-    }
-     
-    cout << endl;
+    cout << s.count(5) << endl;
 
-    ////auto keyword
-    for(auto i: s){
-        cout << i;
-    }
-
-    s.erase(s.begin());
-    s.clear();
+    //size
+    cout << s.size() << endl;
     
+    // returns address
+    cout << *s.find(5) << endl;
 
 
 }
