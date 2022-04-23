@@ -30,7 +30,7 @@ int main(){
     l1.pop_front();
 
     //maxsize
-    l1.max_size();
+    cout << l1.max_size()<<endl;
 
     //remove
     l1.remove(30);
@@ -47,4 +47,6 @@ int main(){
     l1.clear();
 
     l1.sort();
+
+    l1.get_allocator();
 }
